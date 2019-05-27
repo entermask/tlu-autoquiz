@@ -1,0 +1,33 @@
+{
+	"name": "TLU Quiz",
+	"description": "Crawl Address - https://dev.vivoo.vn",
+	"version": "1.0",
+	"icons": { "16": "images/get_started128.png", "32": "images/get_started128.png", "48": "images/get_started128.png", "128": "images/get_started128.png" },
+	"browser_action": {
+		"default_icon": "images/get_started128.png",
+		"default_popup": "popup.html",
+		"default_title": "DEV.VIVOO.VN"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"content_scripts" : [
+		{
+			"matches" : [
+				"https://elearning.thanglong.edu.vn/mod/quiz/*"
+			],
+			"js" : [
+				"jquery.js",
+				"tracnghiem.js"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"https://elearning.thanglong.edu.vn/*",
+		"storage"
+	],
+	"manifest_version": 2
+}
