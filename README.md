@@ -1,2 +1,3 @@
 # tlu-autoquiz
-Thăng Long not Thủy Lợi =]]
+
+Auto correct đáp án trắc nghiệm Mac / tư tưởng, trên elearning... =))
